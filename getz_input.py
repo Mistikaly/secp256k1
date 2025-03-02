@@ -16,7 +16,7 @@ parser.add_argument("-rawtx", help = "Raw Transaction on the blockchain.", actio
 
 if len(sys.argv)==1:
     parser.print_help()
-    sys.exit(1)
+    system.exit (1)
 args = parser.parse_args()
 #==============================================================================
 
