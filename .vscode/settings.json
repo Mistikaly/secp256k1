@@ -1,9 +1,12 @@
 {
-    "files.associations": {
-        "*.jsonc": "jsonc"
-    },
-    "editor.formatOnSave": true,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.detectIndentation": false
+  "files.associations": {
+    "*.jsonc": "jsonc"
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "cSpell.words": [
+    "iscompressed"
+  ]
 }
