@@ -5,7 +5,6 @@
 import sys
 import argparse
 from urllib.request import urlopen
-from urllib.error import URLError, HTTPError
 
 try:
 import secp256k1 as ice

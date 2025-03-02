@@ -11,8 +11,8 @@ from urllib.request import urlopen
 parser = argparse.ArgumentParser(description='This tool helps to get ECDSA Signature r,s,z values from Bitcoin rawtx or txid', 
                                  epilog='Enjoy the program! :)    Tips BTC: bc1q39meky2mn5qjq704zz0nnkl0v7kj4uz6r529at')
 
-parser.add_argument("-txid", help = "txid of the transaction. Automatically fetch rawtx from given txid", action="store")
-parser.add_argument("-rawtx", help = "Raw Transaction on the blockchain.", action="store")
+parser.add_argument("-txid", help="txid of the transaction. Automatically gets the rawtx from the blockchain.", action="store")
+parser.add_argument("-rawtx", help="Raw transaction on the blockchain.", action="store")
 
 if len(sys.argv)==1:
     parser.print_help()
