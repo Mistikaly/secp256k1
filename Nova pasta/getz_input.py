@@ -1,28 +1,22 @@
 # -*- coding: utf-8 -*-
 """
+
 @author: iceland
 """
 import sys
+import secp256k1 as ice
 import argparse
 from urllib.request import urlopen
+#==============================================================================
+parser = argparse.ArgumentParser(description='This tool helps to get ECDSA Signature r,s,z values from Bitcoin rawtx or txid', 
+                                 epilog='Enjoy the program! :    Tips BTC: bc1q39meky2mn5qjq704zz0nnkl0v7kj4uz6r529at')
 
-try:
-import secp256k1 as ice
-except ImportError:
-print("[ERROR] The 'secp256k1' library is not installed.")
-sys.exit(1)
+parser.add_argument("-txid", help = "txid of the transaction. Automatically fetch rawtx from given txid", action="store")
+parser.add_argument("-rawtx", help = "Raw Transaction on the blockchain.", action="store")
 
-# ============================================================================
-parser = argparse.ArgumentParser(description="This script gets r, s, and z values ​​of ECDSA signatures from a Bitcoin transaction.",
-epilog="Enjoy! :) BTC Tips: bc1q39meky2mn5qjq704zz0nnkl0v7kj4uz6r529at")
-
-parser.add_argument("-txid", help="txid of the transaction. Automatically gets the rawtx from the blockchain.", action="store")
-parser.add_argument("-rawtx", help="Raw transaction on the blockchain.", action="store")
-
-if len(sys.argv) == 1:
- parser.print_help()
- sys.exit(1)
-
+if len(sys.argv)==1:
+    parser.print_help()
+    sys.exit (1)
 args = parser.parse_args()
 # ============================================================================
 

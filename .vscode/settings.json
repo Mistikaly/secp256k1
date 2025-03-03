@@ -2,11 +2,21 @@
   "files.associations": {
     "*.jsonc": "jsonc"
   },
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
-  "editor.insertSpaces": true,
+  "editor.formatOnSave": false,
+  "editor.tabSize": 1,
+  "editor.insertSpaces": false,
   "editor.detectIndentation": false,
   "cSpell.words": [
     "iscompressed"
-  ]
+  ],
+  "python.testing.unittestArgs": [
+    "-v",
+    "-s",
+    ".",
+    "-p",
+    "*_test.py"
+  ],
+  "python.testing.pytestEnabled": false,
+		"python.testing.unittestEnabled": true,
+		"files.autoSave": "afterDelay"
 }
