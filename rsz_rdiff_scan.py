@@ -15,7 +15,7 @@ N = ice.N
 ZERO = ice.Zero
 #==============================================================================
 parser = argparse.ArgumentParser(description='This tool helps to get ECDSA Signature r,s,z values from Bitcoin Address. Also attempt to solve \
-                                 for privatekey using Rvalues successive differencing mathematics using bsgs table in RAM.', 
+                                 for privatekey using Revalues successive differencing mathematics using bsgs table in RAM.', 
                                  epilog='Enjoy the program! :)    Tips BTC: bc1q39meky2mn5qjq704zz0nnkl0v7kj4uz6r529at')
 
 parser.add_argument("-a", help = "Address to search for its rsz from the transactions", required="True")
